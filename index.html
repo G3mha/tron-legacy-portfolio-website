@@ -4,28 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;300;400;700&family=Open+Sans&display=swap" rel="stylesheet">
     <title>Enricco Gemha</title>
 </head>
 <body>
-    <div class="left">
-        <h1>Enricco Gemha</h1>
-        <h2>Computer Engineering <br> at <a class="insper" href="https://insper.edu.br/">Insper Learning Institution</a></h2>
-        
-        <div class="navbar">
-            <a href="#about">ABOUT</a><br>
-            <a href="#experiences">EXPERIENCE</a><br>
-            <a href="#projects">PROJECTS</a>
+    <div class="container-left">
+        <div class="container-header">
+            <h1 class="name">Enricco Gemha</h1>
+            <h2 class="college">
+                Computer Engineering <br>
+                at <a class="insper" href="https://insper.edu.br/">Insper Learning Institution</a>
+            </h2>
         </div>
-        
-        <div class="footer">
-            <div class="icon"><a class="icon" href="https://www.linkedin.com/in/enriccogemha/"><img src="icons/linkedin.svg"></a></div>
-            <div class="icon"><a class="icon" href="https://www.instagram.com/enriccogemha/"><img src="icons/instagram.svg"></a></div>
-            <div class="icon"><a class="icon" href="https://twitter.com/gemhadventures/"><img src="icons/x.svg"></a></div>
+        <div class="container-navbar">
+            <div class="container-bullet">
+                <a href="#about">
+                    <div class="line"></div>
+                    <div class="nav-item">ABOUT<br></div>
+                </a>
+            </div>
+            <div class="container-bullet">
+                <a href="#experiences">
+                    <div class="line"></div>
+                    <div class="nav-item">EXPERIENCE<br></div>
+                </a>
+            </div>
+            <div class="container-bullet">
+                <a href="#projects">
+                    <div class="line"></div>
+                    <div class="nav-item">PROJECTS<br></div>
+                </a>
+            </div>
+        </div>
+        <div class="container-footer">
+            <div class="icon"><a href="https://www.linkedin.com/in/enriccogemha/"><img src="icons/linkedin.svg"></a></div>
+            <div class="icon"><a href="https://www.instagram.com/enriccogemha/"><img src="icons/instagram.svg"></a></div>
+            <div class="icon"><a href="https://twitter.com/gemhadventures/"><img src="icons/x.svg"></a></div>
             <div class="icon"><a href="https://github.com/G3mha/"><img src="icons/github.svg"></a></div>
         </div>
     </div>
-    <div class="right">
-        <div id="about">
+    <div class="container-right">
+        <div class="container-about" id="about">
             <p>
                 Since 2020, I've decided to pursue a career in tech.
                 One year later, I got accepted in Computer Engineer at Insper. 
@@ -35,14 +56,15 @@
                 a neural network that can drive a mini-car autonomously, 
                 a videogame that is a homage to the classic movie "Night of the Living Dead",
                 and a lot more.
-    
+                <br><br>
                 Despite the thematical diversity of my projects, they all shared something in common,
                 which is the fact that they all had the purpose of making people's lives easier, through
                 entertainment or solving real-world problems. That is my goal as a developer, 
                 to make people's lives easier using technology as a mean.
-    
+                <br><br>
                 If you want to find me while I'm not coding, I may be re-watching Blade Runner, 
-                scoring some goals at the soccer court, or in some wild adventure catching Pokémon.
+                scoring some goals at the soccer court, or in some wild adventure catching
+                <a class="pokemon">Pokémon</a>.
             </p>
         </div>
         <div id="experiences">

@@ -1,50 +1,104 @@
 body {
     background-color: #323437;
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    display: flex;
+    flex-direction: row;
 }
 
-.left {
-    position: absolute;
-    top: 7vh;
-    left: 5vw;
+.container-left {
+    font-family: 'Fira Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50vw;
+	flex-grow: 0;
+	flex-shrink: 0;
 }
 
-h1 {
+.container-header {
+    margin-top: 35px;
+    margin-left: 65px;
+    color: #EFEFEF;
+}
+
+.name {
     color: #E2B714;
     font-size: 60px;
     font-weight: 700;
     margin-bottom: 5px;
 }
 
-h2 {
-    color: #EFEFEF;
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+.college {
     font-size: 25px;
     font-weight: 500;
     margin-top: 5px;
-    margin-bottom: 15px;
+    margin-bottom: 15vh;
 }
 
-.navbar {
-}
-
-a {
+.college a {
     color: #EFEFEF;
     text-decoration: none;
 }
 
-a:hover {
+.college a:hover {
     color: #E2B714;
 }
 
-.footer {
-    margin-top: 100vh;
-    display: inline;
+.container-navbar {
+    margin-left: 65px;
+    font-size: 20px;
 }
 
-.icon {
+.container-bullet .line {
+    border-width: 4px;
+    border-style: solid;
+    border-color: rgb(80, 80, 78);
+    width: 250px;
+}
+
+.container-bullet:hover .line {
+    border-color: #E2B714;
+    width: 300px;
+}
+
+.container-bullet:hover .nav-item {
+    color: #E2B714;
+}
+
+.container-bullet .nav-item {
+    margin-bottom: 10px;
+    color: #EFEFEF;
+}
+
+.container-bullet a {
+    text-decoration: none;
+}
+
+.container-footer {
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 65px;
+    margin-left: 65px;
+}
+
+.container-footer .icon {
     width: 30px;
     height: 30px;
     float: left;
     margin-right: 20px;
+}
+
+.container-right {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container-about p {
+    color: #EFEFEF;
+    font-size: 17px;
+    font-weight: 400;
+    margin-top: 15vh;
+    margin-right: 5vw;
+}
+
+.pokemon {
+    cursor: url(icons/pokemon.png), auto;
+    color: #E2B714;
 }
