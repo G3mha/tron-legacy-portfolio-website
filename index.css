@@ -102,3 +102,12 @@ body {
     cursor: url(icons/pokemon.png), auto;
     color: #E2B714;
 }
+
+.yh {
+    color: #E2B714;
+    text-decoration: none;
+}
+
+.better-spacing {
+    letter-spacing: 0.5px;
+}
