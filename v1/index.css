@@ -33,12 +33,13 @@ body {
     margin-bottom: 15vh;
 }
 
-.college a {
+.yh {
     color: #EFEFEF;
     text-decoration: none;
+    font-weight: bold;
 }
 
-.college a:hover {
+.yh:hover {
     color: #E2B714;
 }
 
@@ -93,19 +94,23 @@ body {
 .container-about p {
     color: #EFEFEF;
     font-size: 17px;
-    font-weight: 400;
+    font-weight: 300;
     margin-top: 15vh;
     margin-right: 5vw;
 }
 
-.pokemon {
-    cursor: url(icons/pokemon.png), auto;
-    color: #E2B714;
+.bold {
+    font-weight: bold;
 }
 
-.yh {
+.pokemon {
+    cursor: url(icons/pokemon.png), auto;
+    color: #EFEFEF;
+    font-weight: bold;
+}
+
+.pokemon:hover {
     color: #E2B714;
-    text-decoration: none;
 }
 
 .better-spacing {
