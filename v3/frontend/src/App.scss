@@ -1,0 +1,102 @@
+$font-stack: 'SF', sans-serif;
+$font-title: 'HACKED', cursive;
+$primary-color: #000;
+$secondary-color: #8fe0f1;
+$third-color: #fff;
+
+.App {
+  text-align: center;
+  background-color: $primary-color;
+  font-family: $font-stack;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.name {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  text-transform: uppercase;
+  z-index: 1;
+  
+  h1 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 5rem;
+    color: $secondary-color;
+    font-family: $font-title;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 1.5rem;
+    color: $third-color;
+    font-family: $font-stack;
+    font-weight: 300;
+  }
+
+  a {
+    text-decoration: none;
+    color: $secondary-color;
+    font-weight: 600;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60%;
+  width: auto;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  perspective: 1500px;
+  background: linear-gradient(white, #efefef);
+}
+
+.card {
+  font-weight: bold;
+  padding: 1em;
+  text-align: right;
+  color: #181a1a;
+  
+  width:  300px;
+  height: 400px;
+  box-shadow: 0 1px 5px #00000099;
+  
+  border-radius: 10px;
+  background-image: url(https://images.unsplash.com/photo-1557672199-6e8c8b2b8fff?ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80);
+  background-size: cover;
+  
+  position: relative;
+  
+  transition-duration: 300ms;
+  transition-property: transform, box-shadow;
+  transition-timing-function: ease-out;
+  transform: rotate3d(0);
+}
+
+.card:hover {
+  transition-duration: 150ms;
+  box-shadow: 0 5px 20px 5px #00000044;
+}
+
+.card .glow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  
+  background-image: radial-gradient(circle at 50% -20%, #ffffff22, #0000000f);
+}
