@@ -74,69 +74,7 @@ header {
 }
 
 main {
-  margin-top: 35vh;
 
-  .cards {
-    display: flex;
-    flex-direction: row;
-    gap: 7.5vw;
-    justify-content: center;
-    align-items: center;
-    
-    .card {
-      border-radius: 1rem;
-      text-decoration: none;
-      
-      img {
-        border-radius: 1rem;
-        object-fit: cover;
-        width: 10vw;
-        height: auto;
-      }
-
-      p {
-        font-size: 1.5rem;
-        text-decoration: none;
-        color: $secondary-color;
-        font-family: $font-stack;
-        font-weight: 300;
-      }
-
-      .label {
-        display: flex;
-        flex-direction: row;
-        gap: 1rem;
-        justify-content: center;
-        align-items: center;
-
-        p {
-          font-size: 1.5rem;
-          text-decoration: none;
-          color: $secondary-color;
-          font-family: $font-stack;
-          font-weight: 300;
-        }
-
-        .icon {
-          /* Link to convert hexadecimal color code to CSS filter */
-          /* https://codepen.io/sosuke/pen/Pjoqqp */
-          filter: invert(83%) sepia(24%) saturate(546%) hue-rotate(148deg) brightness(94%) contrast(102%);
-        }
-        
-        img {
-          width: 25px;
-          height: auto;
-          border-radius: 0;
-        }
-      }
-
-      .certificate, .project {
-        // width needs to be the same the .label width
-        width: 300px;
-        height: 210px;
-      }
-    }
-  }
 }
 
 footer {
