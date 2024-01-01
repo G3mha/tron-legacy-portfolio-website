@@ -1,7 +1,3 @@
-import cover1 from './img/cover1.png';
-import cover2 from './img/cover2.png';
-import cover3 from './img/cover3.png';
-import cover4 from './img/cover4.png';
 import './App.css';
 
 import Footer from './components/footer/footer.jsx';
@@ -9,6 +5,15 @@ import Footer from './components/footer/footer.jsx';
 
 
 function App() {
+  
+  VanillaTilt.init(
+    document.querySelectorAll(".js-tilt"), {
+      max: 25,
+      speed: 400,
+    }
+  );
+
+
   return (
     <div className='App'>
       <div className='name'>
@@ -18,24 +23,41 @@ function App() {
         <p>Computer Engineering student at <a href='https://insper.edu.br'>Insper</a></p>
       </div>
 
-      {/* <div className="container">
-        <div className="card">
-            <div className="cover"><img src={cover1} alt=""/></div>
-            <p className='card-label'>About</p>
+      <section className="cards">
+        <div className="card js-tilt" id='card1' data-tilt>
+          <div class="glow" />
+          <p className='card-label'>About</p>
         </div>
-        <div className="card">
-            <div className="cover"><img src={cover2} alt=""/></div>
-            <p className='card-label'>Experience</p>
+        {/* <div className="card" id='card2'>
+          <div class="glow" />
+          <p className='card-label'>Experience</p>
         </div>
-        <div className="card">
-            <div className="cover"><img src={cover3} alt=""/></div>
-            <p className='card-label'>Certificates</p>
+        <div className="card" id='card3'>
+          <div class="glow" />
+          <p className='card-label'>Certificates</p>
         </div>
-        <div className="card">
-            <div className="cover"><img src={cover4} alt=""/></div>
-            <p className='card-label'>Projects</p>
+        <div className="card" id='card4'>
+          <div class="glow" />
+          <p className='card-label'>Projects</p>
+        </div> */}
+      </section>
+
+      <section className='cards'>
+        <div className='card js-tilt' data-tilt data-tilt-scale="1.1" data-tilt-glare data-tilt-max-glare="0.8">
+          <div className='banner'>
+            <h2>
+              Converse <br />
+              All Star
+            </h2>
+          </div>
+          <img src='./images/converse.png' alt='shoe' className='pop' />
+          <div className='content'>
+            <p>
+              Converse All Star
+            </p>
+          </div>
         </div>
-      </div> */}
+      </section>
 
       <Footer />
 
@@ -44,5 +66,3 @@ function App() {
 }
 
 export default App;
-
-

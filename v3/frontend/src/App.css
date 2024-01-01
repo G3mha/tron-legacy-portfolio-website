@@ -40,51 +40,54 @@
   font-weight: 600;
 }
 
-.container {
+.cards {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  height: 60%;
-  width: auto;
+  flex-wrap: wrap;
+  padding: 1em;
+  max-width: 1100px;
+  margin: 0 auto;
+  min-height: 100vh;
 }
 
-body {
-  font-family: system-ui, sans-serif;
-  perspective: 1500px;
-  background: linear-gradient(white, #efefef);
+.cards * {
+  box-sizing: border-box;
 }
 
 .card {
-  font-weight: bold;
-  padding: 1em;
-  text-align: right;
-  color: #181a1a;
-  width: 300px;
-  height: 400px;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.6);
+  width: 17em;
+  background: #fff;
   border-radius: 10px;
-  background-image: url(https://images.unsplash.com/photo-1557672199-6e8c8b2b8fff?ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80);
-  background-size: cover;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   position: relative;
-  transition-duration: 300ms;
-  transition-property: transform, box-shadow;
-  transition-timing-function: ease-out;
-  transform: rotate3d(0);
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+  margin: 2em;
 }
 
-.card:hover {
-  transition-duration: 150ms;
-  box-shadow: 0 5px 20px 5px rgba(0, 0, 0, 0.2666666667);
-}
-
-.card .glow {
+.card img {
+  width: 16em;
   position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  background-image: radial-gradient(circle at 50% -20%, rgba(255, 255, 255, 0.1333333333), rgba(0, 0, 0, 0.0588235294));
+  top: 6em;
+  right: -4em;
+  filter: drop-shadow(0px 10px 25px rgba);
+}
+
+.content {
+  padding: 1em;
+}
+
+.card h2 {
+  color: #fff;
+  margin: 0 0 0 0.8em;
+}
+
+.banner {
+  height: 15em;
+  background: linear-gradient(90deg, #fb3854 0%, #901026 100%);
+  padding-top: 3em;
+  border-radius: 10px 10px 50% 50%;
 }
 
 /*# sourceMappingURL=App.css.map */

@@ -1,0 +1,94 @@
+@font-face {
+  font-family: "SF";
+  src: local("SF"), url("./fonts/SF.ttf") format("truetype");
+}
+@font-face {
+  font-family: "HACKED";
+  src: local("HACKED"), url("./fonts/HACKED.ttf") format("truetype");
+}
+body {
+  text-align: center;
+  background-color: #000;
+  font-family: "SF", sans-serif;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+header {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  text-transform: uppercase;
+  z-index: 1;
+}
+header h1 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 5rem;
+  color: #8fe0f1;
+  font-family: "HACKED", sans-serif;
+}
+header p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #fff;
+  font-family: "SF", sans-serif;
+  font-weight: 300;
+}
+header a {
+  text-decoration: none;
+  color: #8fe0f1;
+  font-weight: 600;
+}
+
+main {
+  margin-top: 35vh;
+}
+main .cards {
+  display: flex;
+  flex-direction: row;
+  gap: 7.5vw;
+  justify-content: center;
+  align-items: center;
+}
+main .cards .card {
+  border-radius: 1rem;
+}
+main .cards .card img {
+  object-fit: cover;
+  width: 10vw;
+  height: auto;
+}
+main .cards .card p {
+  font-size: 1.5rem;
+  color: #8fe0f1;
+  font-family: "SF", sans-serif;
+  font-weight: 300;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 10vh;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+footer a .icon {
+  /* Link to convert a hexadecimal color code to a CSS filter */
+  /* https://codepen.io/sosuke/pen/Pjoqqp */
+  filter: invert(83%) sepia(24%) saturate(546%) hue-rotate(148deg) brightness(94%) contrast(102%);
+}
+
+/*# sourceMappingURL=index.css.map */
