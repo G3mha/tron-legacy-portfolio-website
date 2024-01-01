@@ -70,6 +70,7 @@ main {
     align-items: center;
     .card {
       border-radius: 1rem;
+      text-decoration: none;
       img {
         object-fit: cover;
         width: 10vw;
@@ -77,6 +78,7 @@ main {
       }
       p {
         font-size: 1.5rem;
+        text-decoration: none;
         color: $secondary-color;
         font-family: $font-stack;
         font-weight: 300;

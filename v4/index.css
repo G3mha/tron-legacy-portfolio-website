@@ -61,6 +61,7 @@ main .cards {
 }
 main .cards .card {
   border-radius: 1rem;
+  text-decoration: none;
 }
 main .cards .card img {
   object-fit: cover;
@@ -69,6 +70,7 @@ main .cards .card img {
 }
 main .cards .card p {
   font-size: 1.5rem;
+  text-decoration: none;
   color: #8fe0f1;
   font-family: "SF", sans-serif;
   font-weight: 300;
