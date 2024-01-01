@@ -1,5 +1,5 @@
 $font-stack: 'SF', sans-serif;
-$font-title: 'HACKED', sans-serif;
+$font-title: 'BLADE_RUNNER', sans-serif;
 $primary-color: #000;
 $secondary-color: #8fe0f1;
 $third-color: #fff;
@@ -10,8 +10,8 @@ $third-color: #fff;
 }
 
 @font-face {
-  font-family: 'HACKED';
-  src: local('HACKED'), url('./fonts/HACKED.ttf') format('truetype');
+  font-family: 'BLADE_RUNNER';
+  src: local('BLADE_RUNNER'), url('./fonts/BLADE_RUNNER.ttf') format('truetype');
 }
 
 body {
@@ -57,9 +57,11 @@ header {
     margin: 0;
     padding: 0;
     text-align: center;
-    font-size: 5rem;
+    font-size: 4rem;
     color: $secondary-color;
     font-family: $font-title;
+    text-transform: lowercase;
+    margin-bottom: 1vh;
   }
 
   p {
