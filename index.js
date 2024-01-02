@@ -16,7 +16,6 @@ path = path.split("/").pop();
 path = path.split(".")[0];
 const activeLink = document.getElementById(path);
 
-console.log(path)
 if (activeLink) {
     activeLink.classList.add('active');
     // Remove the nav-link-active from the other links

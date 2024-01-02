@@ -3,6 +3,7 @@ $font-title: 'BLADE_RUNNER', sans-serif;
 $primary-color: #000;
 $secondary-color: #8fe0f1;
 $third-color: #fff;
+$fourth-color: rgba($color: grey, $alpha: 0.7);
 
 @font-face {
   font-family: 'SF';
@@ -76,7 +77,92 @@ header {
 }
 
 main {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 3vh;
+  align-self: center;
+  margin-top: 27.5vh;
+  margin-bottom: 7.5vh;
+  
+  .job {
+    display: grid;
+    grid-template-areas:
+      'duration title-company'
+      'duration location'
+      'duration description'
+      'duration tech-stack';
+    grid-row-gap: 1.5vh;
+    grid-column-gap: 3vw;
+    border-radius: 1em;
+    text-align: left;
 
+    padding-top: 2vh;
+    padding-right: 3vw;
+    padding-left: 3vw;
+    
+    .duration {
+      grid-area: duration;
+      color: $fourth-color;
+    }
+    .title-company {
+      grid-area: title-company;
+      color: $third-color;
+    }
+    .location {
+      grid-area: location;
+      font-size: 1em;
+      color: $fourth-color;
+    }
+    .description {
+      grid-area: description;
+      font-size: 1em;
+      color: $fourth-color;
+    }
+    .tech-stack {
+      grid-area: tech-stack;
+      
+    }
+
+    div, ul {
+      font-size: 1.5rem;
+      max-width: 50vw;
+      color: $third-color;
+    }
+
+    ul {
+      padding: 0;
+      margin-top: 1vh;
+      li {
+        display: inline;
+        margin-right: 1vw;
+        // each item must be stylized in rounded bubble
+        color: #bbbbbb;
+        border-radius: 2em;
+        padding: 5px 10px;
+        font-size: 1rem;
+        background-color: $fourth-color;
+      }
+    }
+  }
+  
+  .job-active {
+    box-shadow: 0 0 0 0.5px $secondary-color !important;
+
+    .title-company {
+      color: $secondary-color;
+    }
+
+    .duration, .description, .location {
+      color: $third-color;
+    }
+
+    ul {
+      li {
+        color: $primary-color;
+        background-color: $secondary-color;
+      }
+    }
+  }
 }
 
 footer {
