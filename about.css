@@ -1,0 +1,104 @@
+@font-face {
+  font-family: "SF";
+  src: local("SF"), url("./fonts/SF.ttf") format("truetype");
+}
+@font-face {
+  font-family: "BLADE_RUNNER";
+  src: local("BLADE_RUNNER"), url("./fonts/BLADE_RUNNER.ttf") format("truetype");
+}
+body {
+  text-align: center;
+  background-color: #000;
+  font-family: "SF", sans-serif;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  text-transform: uppercase;
+  z-index: 1;
+}
+header .nav-link, header span {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+}
+header .nav-link:hover, header .active {
+  color: #8fe0f1;
+}
+header a {
+  text-decoration: none;
+  color: #8fe0f1;
+  font-weight: 600;
+}
+header h1 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 4rem;
+  color: #8fe0f1;
+  font-family: "BLADE_RUNNER", sans-serif;
+  text-transform: lowercase;
+  margin-bottom: 1vh;
+}
+header p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+main {
+  margin-top: 27.5vh;
+  margin-bottom: 7.5vh;
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+main h2 {
+  color: #8fe0f1;
+}
+main p {
+  color: #fff;
+  font-size: 1.5rem;
+  display: inline-block !important;
+}
+main #korok {
+  font-size: 1.5rem;
+  color: #8fe0f1;
+  display: inline-block !important;
+}
+
+.korok-active {
+  cursor: url("./img/korok.webp"), auto;
+}
+
+footer {
+  margin-top: auto;
+  width: 100%;
+  margin-bottom: 7.5vh;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+footer a .icon {
+  /* Link to convert hexadecimal color code to CSS filter */
+  /* https://codepen.io/sosuke/pen/Pjoqqp */
+  filter: invert(83%) sepia(24%) saturate(546%) hue-rotate(148deg) brightness(94%) contrast(102%);
+}
+
+/*# sourceMappingURL=about.css.map */

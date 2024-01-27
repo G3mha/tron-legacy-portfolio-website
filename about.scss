@@ -1,0 +1,125 @@
+$font-stack: 'SF', sans-serif;
+$font-title: 'BLADE_RUNNER', sans-serif;
+$primary-color: #000;
+$secondary-color: #8fe0f1;
+$third-color: #fff;
+$fourth-color: rgba($color: grey, $alpha: 0.7);
+
+@font-face {
+  font-family: 'SF';
+  src: local('SF'), url('./fonts/SF.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'BLADE_RUNNER';
+  src: local('BLADE_RUNNER'), url('./fonts/BLADE_RUNNER.ttf') format('truetype');
+}
+
+body {
+  text-align: center;
+  background-color: $primary-color;
+  font-family: $font-stack;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  text-transform: uppercase;
+  z-index: 1;
+
+  .nav-link, span {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $third-color;
+  }
+
+  // change color on hover or being active
+  .nav-link:hover, .active {
+    color: $secondary-color;
+  }
+
+  a {
+    text-decoration: none;
+    color: $secondary-color;
+    font-weight: 600;
+  }
+  
+  h1 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 4rem;
+    color: $secondary-color;
+    font-family: $font-title;
+    text-transform: lowercase;
+    margin-bottom: 1vh;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+    color: $third-color;
+    text-decoration: none;
+    font-weight: 600;
+  }
+}
+
+main {
+  margin-top: 27.5vh;
+  margin-bottom: 7.5vh;
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  
+  h2 {
+    color: $secondary-color;
+  }
+
+  p {
+    color: $third-color;
+    font-size: 1.5rem;
+    display: inline-block !important;
+  }
+  
+  #korok {
+    font-size: 1.5rem;
+    color: $secondary-color;
+    display: inline-block !important;
+  }
+}
+
+.korok-active {
+  // change cursor to image korok.webp
+  cursor: url('./img/korok.webp'), auto;
+}
+
+footer {
+  margin-top: auto;
+  width: 100%;
+  margin-bottom: 7.5vh;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    .icon {
+      /* Link to convert hexadecimal color code to CSS filter */
+      /* https://codepen.io/sosuke/pen/Pjoqqp */
+      filter: invert(83%) sepia(24%) saturate(546%) hue-rotate(148deg) brightness(94%) contrast(102%);
+    }
+  }
+}
