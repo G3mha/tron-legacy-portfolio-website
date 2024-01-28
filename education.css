@@ -1,0 +1,151 @@
+@font-face {
+  font-family: "SF";
+  src: local("SF"), url("./fonts/SF.ttf") format("truetype");
+}
+@font-face {
+  font-family: "BLADE_RUNNER";
+  src: local("BLADE_RUNNER"), url("./fonts/BLADE_RUNNER.ttf") format("truetype");
+}
+body {
+  text-align: center;
+  background-color: #000;
+  font-family: "SF", sans-serif;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  text-transform: uppercase;
+  z-index: 1;
+}
+header .nav-link, header span {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+}
+header .nav-link:hover, header .active {
+  color: #8fe0f1;
+}
+header a {
+  text-decoration: none;
+  color: #8fe0f1;
+  font-weight: 600;
+}
+header h1 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 4rem;
+  color: #8fe0f1;
+  font-family: "BLADE_RUNNER", sans-serif;
+  text-transform: lowercase;
+  margin-bottom: 1vh;
+}
+header p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 3vh;
+  align-self: center;
+  margin-top: 27.5vh;
+  margin-bottom: 7.5vh;
+}
+main .education {
+  display: grid;
+  grid-template-areas: "duration title-company" "duration location" "duration description" "duration tech-stack";
+  grid-row-gap: 1.5vh;
+  grid-column-gap: 3vw;
+  border-radius: 1em;
+  text-align: left;
+  padding-top: 2vh;
+  padding-right: 3vw;
+  padding-left: 3vw;
+}
+main .education .duration {
+  grid-area: duration;
+  color: rgba(128, 128, 128, 0.7);
+}
+main .education .title-company {
+  grid-area: title-company;
+  color: #fff;
+}
+main .education .location {
+  grid-area: location;
+  font-size: 1em;
+  color: rgba(128, 128, 128, 0.7);
+}
+main .education .description {
+  grid-area: description;
+  font-size: 1em;
+  color: rgba(128, 128, 128, 0.7);
+}
+main .education .tech-stack {
+  grid-area: tech-stack;
+}
+main .education div, main .education ul {
+  font-size: 1.5rem;
+  max-width: 50vw;
+  color: #fff;
+}
+main .education ul {
+  padding: 0;
+  margin-top: 1vh;
+}
+main .education ul li {
+  display: inline;
+  margin-right: 1vw;
+  color: #bbbbbb;
+  border-radius: 2em;
+  padding: 5px 10px;
+  font-size: 1rem;
+  background-color: rgba(128, 128, 128, 0.7);
+}
+main .education-active {
+  box-shadow: 0 0 0 0.5px #8fe0f1 !important;
+}
+main .education-active .title-company {
+  color: #8fe0f1;
+}
+main .education-active .duration, main .education-active .description, main .education-active .location {
+  color: #fff;
+}
+main .education-active ul li {
+  color: #000;
+  background-color: #8fe0f1;
+}
+
+footer {
+  margin-top: auto;
+  width: 100%;
+  margin-bottom: 7.5vh;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+footer a .icon {
+  /* Link to convert hexadecimal color code to CSS filter */
+  /* https://codepen.io/sosuke/pen/Pjoqqp */
+  filter: invert(83%) sepia(24%) saturate(546%) hue-rotate(148deg) brightness(94%) contrast(102%);
+}
+
+/*# sourceMappingURL=education.css.map */
