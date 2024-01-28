@@ -67,22 +67,16 @@ main {
   margin-left: auto;
   margin-right: auto;
 }
-main h2 {
+main mark {
+  font-size: 1.5rem;
   color: #8fe0f1;
+  background-color: black;
 }
 main p {
   color: #fff;
   font-size: 1.5rem;
-  display: inline-block !important;
-}
-main #korok {
-  font-size: 1.5rem;
-  color: #8fe0f1;
-  display: inline-block !important;
-}
-
-.korok-active {
-  cursor: url("./img/korok.webp"), auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 footer {
