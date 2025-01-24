@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import Card from './components/Card';
 import About from './pages/About';
 import Education from './pages/Education';
+import Experience from './pages/Experience';
 
 const App = () => {
   const cards = [
@@ -29,6 +30,7 @@ const App = () => {
         } />
         <Route path="/about" element={<About />} />
         <Route path="/education" element={<Education />} />
+        <Route path="/experience" element={<Experience />} />
       </Routes>
       <Footer />
     </Router>
