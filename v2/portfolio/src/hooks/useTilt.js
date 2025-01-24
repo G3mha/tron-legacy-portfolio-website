@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import VanillaTilt from '../vanilla-tilt';
+import VanillaTilt from 'vanilla-tilt';
 
 export const useTilt = (options = {}) => {
   const elementRef = useRef(null);
