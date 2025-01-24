@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Card from './components/Card';
 import About from './pages/About';
+import Education from './pages/Education';
 
 const App = () => {
   const cards = [
@@ -27,6 +28,7 @@ const App = () => {
           </main>
         } />
         <Route path="/about" element={<About />} />
+        <Route path="/education" element={<Education />} />
       </Routes>
       <Footer />
     </Router>
