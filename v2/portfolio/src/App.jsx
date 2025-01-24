@@ -5,6 +5,7 @@ import Card from './components/Card';
 import About from './pages/About';
 import Education from './pages/Education';
 import Experience from './pages/Experience';
+import Projects from './pages/Projects';
 
 const App = () => {
   const cards = [
@@ -31,6 +32,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/education" element={<Education />} />
         <Route path="/experience" element={<Experience />} />
+        <Route path="/projects" element={<Projects />} />
       </Routes>
       <Footer />
     </Router>
