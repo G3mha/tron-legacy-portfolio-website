@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Card from './components/Card';
+import About from './pages/About';
 
 const App = () => {
   const cards = [
@@ -15,13 +16,18 @@ const App = () => {
   return (
     <Router>
       <Header />
-      <main>
-        <div className="cards">
-          {cards.map((card, index) => (
-            <Card key={index} {...card} />
-          ))}
-        </div>
-      </main>
+      <Routes>
+        <Route path="/" element={
+          <main>
+            <div className="cards">
+              {cards.map((card, index) => (
+                <Card key={index} {...card} />
+              ))}
+            </div>
+          </main>
+        } />
+        <Route path="/about" element={<About />} />
+      </Routes>
       <Footer />
     </Router>
   );
