@@ -118,6 +118,22 @@ main {
       }
     }
   }
+
+  .about {
+    margin: 27.5vh auto 7.5vh;
+    max-width: 70%;
+  
+    .about-text {
+      color: $third-color;
+      font-size: 1.5rem;
+      margin: 2rem 0;
+  
+      mark {
+        color: $secondary-color;
+        background-color: $primary-color;
+      }
+    }
+  }
 }
 
 footer {
