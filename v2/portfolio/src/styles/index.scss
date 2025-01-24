@@ -216,6 +216,88 @@ main {
       }
     }
   }
+
+  .experience-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 3vh;
+    align-self: center;
+    margin: 27.5vh auto 7.5vh;
+    
+    .experience-item {
+      display: grid;
+      grid-template-areas:
+        'duration title-company'
+        'duration location'
+        'duration description'
+        'duration tech-stack';
+      grid-row-gap: 1.5vh;
+      grid-column-gap: 3vw;
+      border-radius: 1em;
+      text-align: left;
+      padding: 2vh 3vw;
+      transition: box-shadow 0.3s ease;
+      
+      .duration {
+        grid-area: duration;
+        color: rgba(128, 128, 128, 0.7);
+        font-size: 1.5rem;
+      }
+  
+      .title-company {
+        grid-area: title-company;
+        color: $third-color;
+        font-size: 1.5rem;
+      }
+  
+      .location, .description {
+        font-size: 1em;
+        color: rgba(128, 128, 128, 0.7);
+      }
+  
+      .location {
+        grid-area: location;
+      }
+  
+      .description {
+        grid-area: description;
+        max-width: 50vw;
+      }
+  
+      .tech-stack {
+        grid-area: tech-stack;
+        padding: 0;
+        margin-top: 1vh;
+  
+        li {
+          display: inline;
+          margin-right: 1vw;
+          color: #bbbbbb;
+          border-radius: 2em;
+          padding: 5px 10px;
+          font-size: 1rem;
+          background-color: rgba(128, 128, 128, 0.7);
+        }
+      }
+  
+      &.experience-active {
+        box-shadow: 0 0 0 0.5px $secondary-color;
+  
+        .title-company {
+          color: $secondary-color;
+        }
+  
+        .duration, .description, .location {
+          color: $third-color;
+        }
+  
+        .tech-stack li {
+          color: $primary-color;
+          background-color: $secondary-color;
+        }
+      }
+    }
+  }
 }
 
 footer {
