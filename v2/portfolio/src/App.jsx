@@ -1,35 +1,30 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Card from './components/Card';
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
+  const cards = [
+    { to: '/about', image: '/img/card1.png', title: 'About' },
+    { to: '/education', image: '/img/card5.png', title: 'Education' },
+    { to: '/experience', image: '/img/card2.png', title: 'Experience' },
+    { to: '/certificates', image: '/img/card3.png', title: 'Certificates' },
+    { to: '/projects', image: '/img/card4.png', title: 'Projects' }
+  ];
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <Router>
+      <Header />
+      <main>
+        <div className="cards">
+          {cards.map((card, index) => (
+            <Card key={index} {...card} />
+          ))}
+        </div>
+      </main>
+      <Footer />
+    </Router>
+  );
+};
 
-export default App
+export default App;
