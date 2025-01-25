@@ -13,7 +13,7 @@ const Experience = () => {
       skills: ["Python", "PyTest", "ROS", "OpenCV"]
     },
     {
-      duration: "Jun 2021 — Mar 2022",
+      duration: "Jun 2021 — Mar 2022", 
       title: "Automatic Testing Developer",
       company: "Insper Learning Institution",
       location: "Sao Paulo (SP) - Brazil 🇧🇷",
@@ -23,11 +23,11 @@ const Experience = () => {
   ];
 
   return (
-    <main className="experience-container">
+    <main>
       {jobs.map((job, index) => (
         <div 
           key={index}
-          className={`experience-item ${activeIndex === index ? 'experience-active' : ''}`}
+          className={`job ${activeIndex === index ? 'job-active' : ''}`}
           onMouseEnter={() => setActiveIndex(index)}
           onMouseLeave={() => setActiveIndex(null)}
         >

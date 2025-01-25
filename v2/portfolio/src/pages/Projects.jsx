@@ -6,6 +6,9 @@ import iconExternallink from '../assets/img/icon-externallink.svg';
 import iconGithub from '../assets/img/icon-github.svg';
 import iconInstagram from '../assets/img/icon-instagram.svg';
 import iconYoutube from '../assets/img/icon-youtube.svg';
+import iconHtml from '../assets/img/icon-html.svg';
+import iconCss from '../assets/img/icon-css.svg';
+import iconJavascript from '../assets/img/icon-javascript.svg';
 
 const Projects = () => {
   const projects = [
@@ -13,7 +16,11 @@ const Projects = () => {
       image: project1,
       title: 'Pergamon',
       links: [{ url: 'https://pergamon.com.br', icon: iconExternallink, alt: 'external link' }],
-      tech: ['html', 'css', 'javascript']
+      tech: [
+        { icon: iconHtml, name: 'html' },
+        { icon: iconCss, name: 'css' },
+        { icon: iconJavascript, name: 'javascript' }
+      ]
     },
     {
       image: project2,
@@ -50,7 +57,7 @@ const Projects = () => {
               <img src={project.image} alt={`Project ${index + 1}`} className="project" />
               <div className="label">
                 {project.tech?.map((tech, i) => (
-                  <img key={i} src={`./assets/img/icon-${tech}.svg`} alt={tech} />
+                  <img key={i} src={tech.icon} alt={tech.name} />
                 ))}
                 <p>{project.title}</p>
                 {project.links.map((link, i) => (
