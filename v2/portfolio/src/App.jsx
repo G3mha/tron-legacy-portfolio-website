@@ -7,14 +7,19 @@ import Education from './pages/Education';
 import Experience from './pages/Experience';
 import Projects from './pages/Projects';
 import Certificates from './pages/Certificates';
+import card1 from './assets/img/card1.png';
+import card2 from './assets/img/card2.png';
+import card3 from './assets/img/card3.png';
+import card4 from './assets/img/card4.png';
+import card5 from './assets/img/card5.png';
 
 const App = () => {
   const cards = [
-    { to: '/about', image: '/img/card1.png', title: 'About' },
-    { to: '/education', image: '/img/card5.png', title: 'Education' },
-    { to: '/experience', image: '/img/card2.png', title: 'Experience' },
-    { to: '/certificates', image: '/img/card3.png', title: 'Certificates' },
-    { to: '/projects', image: '/img/card4.png', title: 'Projects' }
+    { to: '/about', image: card1, title: 'About' },
+    { to: '/education', image: card5, title: 'Education' },
+    { to: '/experience', image: card2, title: 'Experience' },
+    { to: '/certificates', image: card3, title: 'Certificates' },
+    { to: '/projects', image: card4, title: 'Projects' }
   ];
 
   return (

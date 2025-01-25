@@ -1,29 +1,36 @@
 import { useTilt } from '../hooks/useTilt';
+import project1 from '../assets/img/project1.jpg';
+import project2 from '../assets/img/project2.jpg';
+import project3 from '../assets/img/project3.jpg';
+import iconExternallink from '../assets/img/icon-externallink.svg';
+import iconGithub from '../assets/img/icon-github.svg';
+import iconInstagram from '../assets/img/icon-instagram.svg';
+import iconYoutube from '../assets/img/icon-youtube.svg';
 
 const Projects = () => {
   const projects = [
     {
-      image: '/img/project1.jpg',
+      image: project1,
       title: 'Pergamon',
-      links: [{ url: 'https://pergamon.com.br', icon: '/img/icon-externallink.svg', alt: 'external link' }],
+      links: [{ url: 'https://pergamon.com.br', icon: iconExternallink, alt: 'external link' }],
       tech: ['html', 'css', 'javascript']
     },
     {
-      image: '/img/project2.jpg',
+      image: project2,
       title: '🇹🇭 RoboCup22',
       links: [
-        { url: 'https://www.youtube.com/watch?v=-9vIBCoBaBM', icon: '/img/icon-youtube.svg', alt: 'YouTube' },
-        { url: 'https://github.com/InsperDynamics/REDOX-RoboCup-RMRC-2022', icon: '/img/icon-github.svg', alt: 'GitHub' },
-        { url: 'http://oarkit.intelligentrobots.org/home/the-arena/', icon: '/img/icon-externallink.svg', alt: 'external link' }
+        { url: 'https://www.youtube.com/watch?v=-9vIBCoBaBM', icon: iconYoutube, alt: 'YouTube' },
+        { url: 'https://github.com/InsperDynamics/REDOX-RoboCup-RMRC-2022', icon: iconGithub, alt: 'GitHub' },
+        { url: 'http://oarkit.intelligentrobots.org/home/the-arena/', icon: iconExternallink, alt: 'external link' }
       ]
     },
     {
-      image: '/img/project3.jpg',
+      image: project3,
       title: '🇫🇷 RoboCup23',
       links: [
-        { url: 'https://www.instagram.com/p/CufJNSAOEGV/?img_index=1', icon: '/img/icon-instagram.svg', alt: 'Instagram' },
-        { url: 'https://github.com/InsperDynamics/K1D-RoboCup-RMRC-2023', icon: '/img/icon-github.svg', alt: 'GitHub' },
-        { url: 'http://oarkit.intelligentrobots.org/home/the-arena/', icon: '/img/icon-externallink.svg', alt: 'external link' }
+        { url: 'https://www.instagram.com/p/CufJNSAOEGV/?img_index=1', icon: iconInstagram, alt: 'Instagram' },
+        { url: 'https://github.com/InsperDynamics/K1D-RoboCup-RMRC-2023', icon: iconGithub, alt: 'GitHub' },
+        { url: 'http://oarkit.intelligentrobots.org/home/the-arena/', icon: iconExternallink, alt: 'external link' }
       ]
     }
   ];
@@ -43,7 +50,7 @@ const Projects = () => {
               <img src={project.image} alt={`Project ${index + 1}`} className="project" />
               <div className="label">
                 {project.tech?.map((tech, i) => (
-                  <img key={i} src={`/img/icon-${tech}.svg`} alt={tech} />
+                  <img key={i} src={`./assets/img/icon-${tech}.svg`} alt={tech} />
                 ))}
                 <p>{project.title}</p>
                 {project.links.map((link, i) => (

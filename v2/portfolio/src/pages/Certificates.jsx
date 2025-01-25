@@ -1,19 +1,22 @@
 import { useTilt } from '../hooks/useTilt';
+import certificate1 from '../assets/img/certificate1.jpg';
+import certificate2 from '../assets/img/certificate2.jpg';
+import certificate3 from '../assets/img/certificate3.jpg';
 
 const Certificates = () => {
   const certificates = [
     {
-      image: '/img/certificate1.jpg',
+      image: certificate1,
       title: "Harvard's CS50",
       url: 'https://pll.harvard.edu/course/cs50-introduction-computer-science'
     },
     {
-      image: '/img/certificate2.png',
+      image: certificate2,
       title: 'Duolingo English Test®',
       url: 'https://englishtest.duolingo.com/applicants'
     },
     {
-      image: '/img/certificate3.png',
+      image: certificate3,
       title: 'TOEFL iBT®',
       url: 'https://www.ets.org/toefl/test-takers/ibt.html'
     }
