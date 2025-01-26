@@ -30,19 +30,21 @@ const projects = (await getCollection('work'))
 		<div class="wrapper stack gap-8 lg:gap-20">
 			<header class="hero">
 				<Hero
-					title="Hello, my name is Jeanine White"
-					tagline="I am a Creative Developer who is currently based in Portland, Oregon."
+					title="Hello, I'm Enricco Gemha"
+					tagline="A Computer Engineer focused on Cloud & Cybersecurity, based in Needham, MA."
 					align="start"
 				>
 					<div class="roles">
-						<Pill><Icon icon="code" size="1.33em" /> Developer</Pill>
-						<Pill><Icon icon="microphone-stage" size="1.33em" /> Speaker</Pill>
-						<Pill><Icon icon="pencil-line" size="1.33em" /> Writer</Pill>
+						<Pill>Cloud</Pill>
+						<Pill>Security</Pill>
+						<Pill>Backend Engineering</Pill>
+						<Pill>Robotics</Pill>
+						<Pill>ML</Pill>
 					</div>
 				</Hero>
 
 				<img
-					alt="Jeanine White smiling in a red plaid shirt and tortoise shell glasses"
+					alt="Enricco Gemha at Stanford University"
 					width="480"
 					height="620"
 					src="/assets/portrait.jpg"
@@ -55,19 +57,17 @@ const projects = (await getCollection('work'))
 		<main class="wrapper stack gap-20 lg:gap-48">
 			<section class="section with-background with-cta">
 				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>Selected Work</h3>
-					<p>Take a look below at some of my featured work for clients from the past few years.</p>
+					<h3>Featured Projects</h3>
+					<p>Take a look at some of my technical projects and achievements.</p>
 				</header>
 
 				<div class="gallery">
 					<Grid variant="offset">
-						{
-							projects.map((project) => (
-								<li>
-									<PortfolioPreview project={project} />
-								</li>
-							))
-						}
+						{projects.map((project) => (
+							<li>
+								<PortfolioPreview project={project} />
+							</li>
+						))}
 					</Grid>
 				</div>
 
@@ -81,19 +81,16 @@ const projects = (await getCollection('work'))
 
 			<section class="section with-background bg-variant">
 				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>Mentions</h3>
-					<p>
-						I have been fortunate enough to receive praise for my work in several publications. Take
-						a look below to learn more.
-					</p>
+					<h3>Achievements</h3>
+					<p>Recognition received in international competitions and technical challenges.</p>
 				</header>
 
 				<div class="gallery">
 					<Grid variant="small">
 						{
-							['Medium', 'BuzzFeed', 'The Next Web', 'awwwards.', 'TechCrunch'].map((brand) => (
+							['RoboCup 2023: Best in Mapping', 'RoboCup 2022: Best in Sensing', 'AWS DeepRacer Top 0.25%', 'Stanford Summer Session', 'Olin Exchange Program'].map((achievement) => (
 								<li class="mention-card">
-									<p>{brand}</p>
+									<p>{achievement}</p>
 								</li>
 							))
 						}

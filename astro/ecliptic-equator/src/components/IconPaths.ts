@@ -35,4 +35,7 @@ export const iconPaths = {
 	'linkedin-logo': `<rect width="184" height="184" x="36" y="36" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" rx="8"/><path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" d="M120 112v64m-32-64v64m32-36a28 28 0 0 1 56 0v36"/><circle stroke="none" cx="88" cy="80" r="12"/>`,
 	'instagram-logo': `<circle cx="128" cy="128" r="40" fill="none" stroke-miterlimit="10" stroke-width="16"/><rect width="184" height="184" x="36" y="36" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" rx="48"/><circle cx="180" cy="76" r="12" stroke="none" />`,
 	'tiktok-logo': `<path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" d="M168 106a96 96 0 0 0 56 18V84a56 56 0 0 1-56-56h-40v128a28 28 0 1 1-40-25V89a68 68 0 1 0 80 67Z"/>`,
+	'cloud': `<path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" d="M84 132a48 48 0 1 1 48-48 48 48 0 0 0 48 48"/>`,
+	'shield': `<path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" d="M40 128v-80l144-24v104a96 96 0 0 1-72 93 96 96 0 0 1-72-93z"/>`,
+	'robot': `<path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" d="M96 84.5 32 66.5c-3.5 5.5-5.5 11.5-5.5 18.5 0 18.9 15.3 34.2 34.2 34.2 7 0 13-2 18.5-5.5l12.8 64m49.3-142 4.8 24.8-45.4 10.4m78.8 28.8L168.7 70 96 84.5m60.3-58.3 2.6-2.6 33.9 11.3c1.2.4 1.6 1.1 1 2.4l-27.1 26.5c-.6 1.3-1.3 1.7-2.6 1l-18.8-9.9-4.9-24.8z"/>`,
 };

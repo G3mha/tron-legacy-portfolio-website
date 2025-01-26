@@ -14,26 +14,26 @@ const projects = (await getCollection('work')).sort(
 ---
 
 <BaseLayout
-	title="My Work | Jeanine White"
-	description="Learn about Jeanine White's most recent projects"
+   title="Projects | Enricco Gemha"
+   description="Featured projects in cloud computing, cybersecurity, and robotics"
 >
-	<div class="stack gap-20">
-		<main class="wrapper stack gap-8">
-			<Hero
-				title="My Work"
-				tagline="See my most recent projects below to get an idea of my past experience."
-				align="start"
-			/>
-			<Grid variant="offset">
-				{
-					projects.map((project) => (
-						<li>
-							<PortfolioPreview project={project} />
-						</li>
-					))
-				}
-			</Grid>
-		</main>
-		<ContactCTA />
-	</div>
+   <div class="stack gap-20">
+   	<main class="wrapper stack gap-8">
+   		<Hero
+   			title="Projects"
+   			tagline="A showcase of my technical work and achievements in cloud computing, cybersecurity, and robotics."
+   			align="start"
+   		/>
+   		<Grid variant="offset">
+   			{
+   				projects.map((project) => (
+   					<li>
+   						<PortfolioPreview project={project} />
+   					</li>
+   				))
+   			}
+   		</Grid>
+   	</main>
+   	<ContactCTA />
+   </div>
 </BaseLayout>
