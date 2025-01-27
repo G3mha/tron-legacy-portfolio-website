@@ -1,5 +1,5 @@
 ---
-title: AWS DeepRacer
+title: AWS DeepRacer - Reinforcement Learning Competition
 publishDate: 2022-10-01
 img: /assets/aws-deepracer.jpg
 img_alt: AWS DeepRacer autonomous racing car on a track
