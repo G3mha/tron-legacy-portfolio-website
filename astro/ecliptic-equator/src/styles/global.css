@@ -208,3 +208,25 @@ h5 {
 		gap: 12rem;
 	}
 }
+
+.content {
+  /* Base text styles */
+  h1, h2, h3 {
+    color: var(--accent-regular);
+  }
+
+  p, li {
+    color: var(--gray-0);
+  }
+
+  /* Links should still use accent color */
+  a {
+    color: var(--accent-regular);
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+  }
+
+  a:hover {
+    color: var(--accent-light);
+  }
+}
