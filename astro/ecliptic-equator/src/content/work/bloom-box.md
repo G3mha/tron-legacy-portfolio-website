@@ -1,23 +1,69 @@
 ---
-title: Bloom Box
-publishDate: 2019-12-01 00:00:00
-img: /assets/stock-2.jpg
-img_alt: A bright pink sheet of paper used to wrap flowers curves in front of rich blue background
+title: AWS DeepRacer Optimization
+publishDate: 2022-10-01
+img: /assets/aws-deepracer.jpg
+img_alt: AWS DeepRacer autonomous racing car on a track
 description: |
-  We paired with a cutting-edge music API and a team of horticulturalists
-  to build AI-generated playlists that maximize houseplant health.
+  Developed and optimized a reinforcement learning model for autonomous racing,
+  achieving top 0.25% performance among 5,200+ global submissions.
 tags:
-  - Dev
-  - Branding
-  - Backend
+  - Machine Learning
+  - Python
+  - AWS
+  - Reinforcement Learning
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur posuere commodo venenatis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam non ligula vel metus efficitur hendrerit. In hac habitasse platea dictumst. Praesent et mauris ut mi dapibus semper. Curabitur tortor justo, efficitur sit amet pretium cursus, porta eget odio. Cras ac venenatis dolor. Donec laoreet posuere malesuada. Curabitur nec mi tempor, placerat leo sit amet, tincidunt est. Quisque pellentesque venenatis magna, eget tristique nibh pulvinar in. Vestibulum vitae volutpat arcu. Aenean ut malesuada odio, sit amet pellentesque odio. Suspendisse nunc elit, blandit nec hendrerit non, aliquet at magna. Donec id leo ut nulla sagittis sodales.
+## Project Overview
 
-Integer vitae nibh elit. Suspendisse eget urna eu neque bibendum pharetra. Sed interdum lectus sem, in pulvinar magna dignissim vel. Quisque maximus at urna nec laoreet. Suspendisse potenti. Vestibulum rhoncus sem ut mi pellentesque, in vestibulum erat blandit. Aliquam sodales dui ac maximus consectetur. Duis quis est vehicula, imperdiet nisl nec, fermentum erat. Duis tortor diam, pharetra eu euismod in, vehicula non eros. Curabitur facilisis dui at erat ultrices gravida. In at nunc ultricies, pulvinar mi vel, sagittis mauris. Praesent pharetra posuere purus ac imperdiet. Nulla facilisi.
+AWS DeepRacer is a 1/18th scale autonomous racing car platform that provides a practical way to learn reinforcement learning. The challenge was to develop a model that could navigate complex racing tracks at relatively high speeds, achieving competitive lap times.
 
-Sed pulvinar porttitor mi in ultricies. Etiam non dolor gravida eros pulvinar pellentesque et dictum ex. Proin eu ornare ligula, sed condimentum dui. Vivamus tincidunt tellus mi, sed semper ipsum pharetra a. Suspendisse sollicitudin at sapien nec volutpat. Etiam justo urna, laoreet ac lacus sed, ultricies facilisis dolor. Integer posuere, metus vel viverra gravida, risus elit ornare magna, id feugiat erat risus ullamcorper libero. Proin vitae diam auctor, laoreet lorem vitae, varius tellus.
+#### Technical Implementation
 
-Mauris sed eros in ex maximus volutpat. Suspendisse potenti. Donec lacinia justo consectetur sagittis tempor. Proin ullamcorper nisi vitae auctor rhoncus. Sed tristique aliquam augue. Pellentesque vitae fringilla ligula. Nulla arcu elit, efficitur eu nunc malesuada, eleifend tincidunt orci. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer mattis orci in bibendum ultricies. Quisque a dui erat. Phasellus et vulputate ipsum. Proin metus ex, lobortis nec ornare eget, bibendum ut sapien. Aliquam in dolor lobortis, aliquam tellus a, congue augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+##### Reward Function Engineering
 
-Aenean pretium purus augue, ut bibendum erat convallis quis. Cras condimentum quis velit ac mollis. Suspendisse non purus fringilla, venenatis nisl porta, finibus odio. Curabitur aliquet metus faucibus libero interdum euismod. Morbi sed magna nisl. Morbi odio nibh, facilisis vel sapien eu, tempus tincidunt erat. Nullam erat velit, sagittis at purus quis, tristique scelerisque tortor. Pellentesque lacinia tortor id est aliquam viverra. Vestibulum et diam ac ipsum mollis fringilla.
+- Designed a sophisticated reward function incorporating multiple parameters:
+  - Track position and centerline deviation
+  - Steering angle and stability metrics
+  - Speed optimization based on track segments
+  - Progress tracking and completion incentives
+- Implemented dynamic rewards scaling based on racing conditions
+
+##### Hyperparameter Optimization
+
+- Fine-tuned critical parameters including:
+  - Learning rate: Optimized for convergence speed
+  - Entropy and discount factor
+  - Neural network architecture
+  - Action space granularity
+- Developed all-new method to assess model performance
+
+##### Training Infrastructure
+
+- Using AWS SageMaker for distributed training
+- Implemented parallel training pipelines for faster iteration
+- Created automated evaluation scripts for performance tracking
+- Optimized compute resource utilization to reduce costs
+
+#### Results & Impact
+
+- Achieved ranking in top 0.25% globally (13th out of 5,200+ submissions), receiving recognition from AWS
+- Reduced training costs by 40% through efficient resource management (first vs. final model)
+
+#### Technical Stack
+
+- AWS Services:
+  - DeepRacer Console
+  - SageMaker
+  - RoboMaker
+
+- Languages & Frameworks:
+  - Python
+  - TensorFlow
+  - Pandas for data analysis
+
+#### Key Learnings
+
+- Deep understanding of reinforcement learning principles
+- Practical experience with hyperparameter tuning
+- Efficient cloud resource management
+- Algorithm optimization, for smart decision-making

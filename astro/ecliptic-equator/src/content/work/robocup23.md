@@ -23,7 +23,7 @@ Complete redesign of our search and rescue robot for RoboCup 2023's RMRC categor
 - Enhanced sensor array for hazard detection
 - Improved mobility in debris-filled areas, including stair climbing
 
-### Technical Implementation
+#### Technical Implementation
 
 Advanced features also include:
 
@@ -32,7 +32,7 @@ Advanced features also include:
 - Improved sensors for more precise hazard detection
 - Custom-built metal chassis for durability
 
-### Key Achievements
+#### Key Achievements
 
 - Awarded "Best in Class: Mapping" for:
  - First-ever 2D environment mapping in RMRC
@@ -41,7 +41,7 @@ Advanced features also include:
 
 - Placed 4th out of 11 international teams at RoboCup 2023 in Bordeaux, France
 
-### Impact
+#### Impact
 
 This iteration marked several milestones:
 
