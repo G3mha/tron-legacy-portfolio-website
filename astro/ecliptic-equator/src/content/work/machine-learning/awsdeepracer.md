@@ -1,10 +1,10 @@
 ---
-title: AWS DeepRacer Optimization
+title: AWS DeepRacer
 publishDate: 2022-10-01
 img: /assets/aws-deepracer.jpg
 img_alt: AWS DeepRacer autonomous racing car on a track
 description: |
-  Developed and optimized a reinforcement learning model for autonomous racing,
+  Developed and optimized a reinforcement learning model for autonomous racing competition,
   achieving top 0.25% performance among 5,200+ global submissions.
 tags:
   - Machine Learning

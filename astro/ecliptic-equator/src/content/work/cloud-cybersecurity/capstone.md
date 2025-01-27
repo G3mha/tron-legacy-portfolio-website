@@ -1,7 +1,7 @@
 ---
-title: PinPag Multicloud Infrastructure Monitoring
+title: PinPag - Multicloud Infrastructure Monitoring
 publishDate: 2024-01-26
-img: /assets/multicloud-monitoring.jpg
+img: /assets/pinpag.jpg
 img_alt: Interactive dashboard showing real-time monitoring of cloud infrastructure and security metrics
 description: |
   Developed and improved monitoring, security, and cost optimization solutions for PinPag's payment processing infrastructure across AWS and Azure clouds.
