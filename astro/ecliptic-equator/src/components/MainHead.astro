@@ -33,11 +33,11 @@ const {
    	return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
    };
    const isDark = getThemePreference() === 'dark';
-   document.documentElement.classList[isDark ? 'add' : 'remove']('theme-dark');
+   document.documentElement.classList[isDark ? 'add' : 'remove']('theme-flynn');
 
    if (typeof localStorage !== 'undefined') {
    	const observer = new MutationObserver(() => {
-   		const isDark = document.documentElement.classList.contains('theme-dark');
+   		const isDark = document.documentElement.classList.contains('theme-flynn');
    		localStorage.setItem('theme', isDark ? 'dark' : 'light');
    	});
    	observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });

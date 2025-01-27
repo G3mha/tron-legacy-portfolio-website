@@ -1,54 +1,30 @@
+/* Default/CLU Theme */
 :root {
-	--gray-0: #06141F;
-	--gray-50: #0A1925;
-	--gray-100: #0F243A;
-	--gray-200: #1A3756;
-	--gray-300: #254B73;
-	--gray-400: #315F91;
-	--gray-500: #4279B0;
-	--gray-600: #6494C4;
-	--gray-700: #86AFD8;
-	--gray-800: #A9CAEB;
-	--gray-900: #CCE5FF;
-	--gray-999-basis: 0, 0%, 100%;
-	--gray-999_40: hsla(var(--gray-999-basis), 0.4);
-	--gray-999: #ffffff;
-  
-	--accent-light: #FF9B3C;
+	/* Dark background with orange tint */
+	--gray-999: #000000;  /* Pure black background */
+	--gray-900: #1A1612;  /* Darkest accent with orange tint */
+	--gray-800: #261E15;
+	--gray-700: #332620;
+	--gray-600: #4D371E;
+	--gray-500: #664A28;
+	--gray-400: #8C6435;
+	--gray-300: #B37D3D;
+	--gray-200: #D99544;
+	--gray-100: #FFAD4B;
+	--gray-50: #FFB65C;
+	--gray-0: #FFFFFF;    /* Pure white for highest contrast */
+	
+	/* CLU Theme Accents */
+	--accent-light: #FFB65C;
 	--accent-regular: #FF9B3C;
-	--accent-dark: #FF9B3C;
-	--accent-overlay: hsla(196, 100%, 50%, 0.33);
-	--accent-subtle-overlay: var(--accent-overlay);
-	--accent-text-over: var(--gray-999);
-  
-	--link-color: var(--accent-regular);
-  
+	--accent-dark: #CC5200;
+	--accent-overlay: hsla(31, 100%, 50%, 0.33);
+	
+	/* Gradients */
 	--gradient-stop-1: #FF9B3C;
-	--gradient-stop-2: #FF9B3C;
-	--gradient-stop-3: #FF9B3C;
-	--gradient-subtle: linear-gradient(150deg, var(--gray-900) 19%, var(--gray-999) 150%);
-	--gradient-accent: linear-gradient(
-	  150deg,
-	  var(--gradient-stop-1),
-	  var(--gradient-stop-2),
-	  var(--gradient-stop-3)
-	);
-	--gradient-accent-orange: linear-gradient(
-	  150deg,
-	  #FF9B3C,
-	  #FF6600,
-	  #CC5200
-	);
-	--gradient-stroke: linear-gradient(180deg, var(--gray-900), var(--gray-700));  
-
-	/* Shadows */
-	--shadow-sm: 0px 6px 3px rgba(9, 11, 17, 0.01), 0px 4px 2px rgba(9, 11, 17, 0.01),
-		0px 2px 2px rgba(9, 11, 17, 0.02), 0px 0px 1px rgba(9, 11, 17, 0.03);
-	--shadow-md: 0px 28px 11px rgba(9, 11, 17, 0.01), 0px 16px 10px rgba(9, 11, 17, 0.03),
-		0px 7px 7px rgba(9, 11, 17, 0.05), 0px 2px 4px rgba(9, 11, 17, 0.06);
-	--shadow-lg: 0px 62px 25px rgba(9, 11, 17, 0.01), 0px 35px 21px rgba(9, 11, 17, 0.05),
-		0px 16px 16px rgba(9, 11, 17, 0.1), 0px 4px 9px rgba(9, 11, 17, 0.12);
-
+	--gradient-stop-2: #FF6600;
+	--gradient-stop-3: #CC5200;
+	
 	/* Text Sizes */
 	--text-sm: 0.875rem;
 	--text-base: 1rem;
@@ -59,49 +35,40 @@
 	--text-3xl: 2.625rem;
 	--text-4xl: 3.5rem;
 	--text-5xl: 4.5rem;
-
+	
 	/* Fonts */
 	--font-system: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
 		Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	--font-body: 'Public Sans', var(--font-system);
 	--font-brand: Rubik, var(--font-system);
-
+	
 	/* Transitions */
 	--theme-transition: 0.2s ease-in-out;
 }
 
-:root.theme-dark {
-	--gray-0: #ffffff;
-	--gray-50: #CCE5FF;
-	--gray-100: #A9CAEB;
-	--gray-200: #86AFD8;
-	--gray-300: #6494C4;
-	--gray-400: #4279B0;
-	--gray-500: #315F91;
-	--gray-600: #254B73;
-	--gray-700: #1A3756;
-	--gray-800: #0F243A;
-	--gray-900: #0A1925;
-	--gray-999-basis: 225, 31%, 5%;
-	--gray-999: #000000;
-  
-	--accent-light: #0CE2FF;
+/* Flynn Theme */
+:root.theme-flynn {
+	/* Dark background with blue tint */
+	--gray-999: #000000;  /* Pure black background */
+	--gray-900: #0A1014;  /* Darkest accent with blue tint */
+	--gray-800: #0F181F;
+	--gray-700: #142129;
+	--gray-600: #1C2F3D;
+	--gray-500: #243D52;
+	--gray-400: #2F4F6B;
+	--gray-300: #3B6285;
+	--gray-200: #4776A0;
+	--gray-100: #538BBB;
+	--gray-50: #60A0D6;
+	--gray-0: #FFFFFF;    /* Pure white for highest contrast */
+	
+	/* Flynn Theme Accents */
+	--accent-light: #60F0FF;
 	--accent-regular: #0CE2FF;
-	--accent-dark: #FF9B3C;
+	--accent-dark: #0099CC;
 	--accent-overlay: hsla(196, 100%, 50%, 0.33);
-	--accent-subtle-overlay: hsla(196, 100%, 39%, 0.33);
-	--accent-text-over: var(--gray-0);
-  
-	--gradient-stop-1: #00CCFF;
-	--gradient-subtle: linear-gradient(150deg, var(--gray-900) 19%, var(--gray-999) 81%);
-	--gradient-accent-orange: linear-gradient(
-	  150deg,
-	  #FF9B3C,
-	  #FF6600,
-	  #004B77
-	);
-	--gradient-stroke: linear-gradient(180deg, var(--gray-600), var(--gray-800));
 }
+
 
 html,
 body {

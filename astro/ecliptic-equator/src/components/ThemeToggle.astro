@@ -41,12 +41,12 @@ import Icon from './Icon.astro';
 		border-radius: 999rem;
 	}
 
-	:global(.theme-dark) .icon.light::before {
+	:global(.theme-flynn) .icon.light::before {
 		transform: translateX(100%);
 	}
 
-	:global(.theme-dark) .icon.dark,
-	:global(html:not(.theme-dark)) .icon.light,
+	:global(.theme-flynn) .icon.dark,
+	:global(html:not(.theme-flynn)) .icon.light,
 	button[aria-pressed='false'] .icon.light {
 		color: var(--accent-text-over);
 	}
@@ -76,7 +76,7 @@ import Icon from './Icon.astro';
 
 			/** Set the theme to dark/light mode. */
 			const setTheme = (dark: boolean) => {
-				document.documentElement.classList[dark ? 'add' : 'remove']('theme-dark');
+				document.documentElement.classList[dark ? 'add' : 'remove']('theme-flynn');
 				button.setAttribute('aria-pressed', String(dark));
 			};
 
@@ -88,7 +88,7 @@ import Icon from './Icon.astro';
 		}
 
 		isDark() {
-			return document.documentElement.classList.contains('theme-dark');
+			return document.documentElement.classList.contains('theme-flynn');
 		}
 	}
 	customElements.define('theme-toggle', ThemeToggle);
