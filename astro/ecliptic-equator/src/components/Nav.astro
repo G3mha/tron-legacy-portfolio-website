@@ -285,38 +285,35 @@ const isCurrentPage = (href: string) => {
 			flex-direction: row;
 			font-size: var(--text-sm);
 			border-radius: 999rem;
-			border: 0;
+			border: 2px solid var(--accent-regular);  /* Changed from background to border */
 			padding: 0.5rem 0.5625rem;
-			background: radial-gradient(var(--gray-900), var(--gray-800) 150%);
-			box-shadow: var(--shadow-md);
+			background: transparent;  /* Changed from gradient to transparent */
+			box-shadow: 0 0 10px var(--accent-regular),
+						inset 0 0 10px var(--accent-regular);  /* Added glow */
 		}
 
 		.nav-items::before {
-			position: absolute;
-			inset: -1px;
-			content: '';
-			background: var(--gradient-stroke);
-			border-radius: 999rem;
-			z-index: -1;
+			display: none;  /* Changed from existing styles */
 		}
 
 		.link {
 			padding: 0.5rem 1rem;
 			border-radius: 999rem;
-			transition:
-				color var(--theme-transition),
-				background-color var(--theme-transition);
+			color: var(--accent-regular);  /* Changed color */
+			transition: all 0.3s ease;  /* Added transition */
 		}
 
 		.link:hover,
 		.link:focus {
-			color: var(--gray-100);
-			background-color: var(--accent-subtle-overlay);
+			color: var(--gray-999);
+			background-color: var(--accent-regular);
+			box-shadow: 0 0 15px var(--accent-regular);  /* Added glow */
 		}
 
 		.link[aria-current='page'] {
-			color: var(--accent-text-over);
-			background-color: var(--accent-regular);
+			color: var(--gray-999);
+    		background-color: var(--accent-regular);
+    		box-shadow: 0 0 15px var(--accent-regular);  /* Added glow */
 		}
 
 		.menu-footer {
