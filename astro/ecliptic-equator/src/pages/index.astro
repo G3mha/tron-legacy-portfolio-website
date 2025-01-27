@@ -199,23 +199,37 @@ const projects = (await getCollection('work'))
 
 	/* ====================================================== */
 
-	.mention-card {
-		display: flex;
-		height: 7rem;
-		justify-content: center;
-		align-items: center;
-		text-align: center;
-		border: 1px solid var(--gray-800);
-		border-radius: 1.5rem;
-		color: var(--gray-300);
-		background: var(--gradient-subtle);
-		box-shadow: var(--shadow-sm);
-	}
+    .mention-card {
+        display: flex;
+        height: 7rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border: 2px solid var(--accent-regular);
+        border-radius: 1.5rem;
+        color: var(--accent-regular);
+        background: rgba(0, 0, 0, 0.5);
+        box-shadow: 0 0 10px var(--accent-regular),
+                    inset 0 0 10px var(--accent-regular);
+        transition: all 0.3s ease;
+    }
 
-	@media (min-width: 50em) {
-		.mention-card {
-			border-radius: 1.5rem;
-			height: 9.5rem;
-		}
-	}
+    .mention-card:hover {
+        color: #000000;
+        background: var(--accent-regular);
+        box-shadow: 0 0 20px var(--accent-regular),
+                    inset 0 0 20px var(--accent-regular);
+    }
+
+    .mention-card p {
+        padding: 1rem;
+        font-weight: 500;
+    }
+
+    @media (min-width: 50em) {
+        .mention-card {
+            border-radius: 1.5rem;
+            height: 9.5rem;
+        }
+    }
 </style>
