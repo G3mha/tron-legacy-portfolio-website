@@ -14,16 +14,17 @@
 	--gray-50: #FFB65C;
 	--gray-0: #FFFFFF;    /* Pure white for highest contrast */
 	
-	/* CLU Theme Accents */
-	--accent-light: #FFB65C;
-	--accent-regular: #FF9B3C;
-	--accent-dark: #CC5200;
-	--accent-overlay: hsla(31, 100%, 50%, 0.33);
-	
-	/* Gradients */
-	--gradient-stop-1: #FF9B3C;
-	--gradient-stop-2: #FF6600;
-	--gradient-stop-3: #CC5200;
+	/* CLU Theme (Default) - Vibrant Orange */
+	--accent-light: #FFC107;    /* Brighter orange */
+	--accent-regular: #FF9E00;  /* Vivid orange */
+	--accent-dark: #FF6D00;     /* Deep orange */
+	--accent-overlay: hsla(36, 100%, 50%, 0.33);
+
+	/* Base gradient stops */
+	--gradient-stop-1: #FFC107;
+	--gradient-stop-2: #FF9E00;
+	--gradient-stop-3: #FF6D00;
+
 	
 	/* Text Sizes */
 	--text-sm: 0.875rem;
@@ -49,24 +50,31 @@
 /* Flynn Theme */
 :root.theme-flynn {
 	/* Dark background with blue tint */
-	--gray-999: #000000;  /* Pure black background */
-	--gray-900: #0A1014;  /* Darkest accent with blue tint */
-	--gray-800: #0F181F;
-	--gray-700: #142129;
-	--gray-600: #1C2F3D;
-	--gray-500: #243D52;
-	--gray-400: #2F4F6B;
-	--gray-300: #3B6285;
-	--gray-200: #4776A0;
-	--gray-100: #538BBB;
-	--gray-50: #60A0D6;
-	--gray-0: #FFFFFF;    /* Pure white for highest contrast */
+	--gray-0: #FFFFFF;        /* Pure white */
+	--gray-50: #E6F9FF;      /* Brightest blue-white */
+	--gray-100: #C2F0FF;     /* Light blue tint */
+	--gray-200: #99E1FF;     /* Soft blue */
+	--gray-300: #66CFFF;     /* Medium blue */
+	--gray-400: #33B9FF;     /* Bold blue */
+	--gray-500: #00A3FF;     /* Strong blue */
+	--gray-600: #0082CC;     /* Deep blue */
+	--gray-700: #006299;     /* Darker blue */
+	--gray-800: #004166;     /* Very dark blue */
+	--gray-900: #002033;     /* Nearly black blue */
+	--gray-999: #000000;     /* Pure black */
+  
 	
-	/* Flynn Theme Accents */
-	--accent-light: #60F0FF;
-	--accent-regular: #0CE2FF;
-	--accent-dark: #0099CC;
+	/* Flynn Theme - Hyperintense Electric Blue */
+	--accent-light: #7FF4FF;    /* Brightest electric cyan */
+	--accent-regular: #00F6FF;  /* Pure TRON blue */
+	--accent-dark: #00CCFF;     /* Vivid blue */
 	--accent-overlay: hsla(196, 100%, 50%, 0.33);
+	
+	/* Base gradient stops */
+	--gradient-stop-1: #7FF4FF;
+	--gradient-stop-2: #00F6FF;
+	--gradient-stop-3: #00CCFF;
+
 }
 
 
